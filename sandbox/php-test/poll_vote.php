@@ -27,23 +27,6 @@ fclose($fp);
 ?>
 
 <h2>Result:</h2>
-<table>
-<tr>
-<td>Yes:</td>
-<td>
-<img src="poll.gif"
-width='<?php echo(100*round($yes/($no+$yes),2)); ?>'
-height='20'>
-<?php echo(100*round($yes/($no+$yes),2)); ?>%
-</td>
-</tr>
-<tr>
-<td>No:</td>
-<td>
-<img src="poll.gif"
-width='<?php echo(100*round($no/($no+$yes),2)); ?>'
-height='20'>
-<?php echo(100*round($no/($no+$yes),2)); ?>%
-</td>
-</tr>
-</table>
+<div style="background:red; height:30px; width: <?php echo(100*round($yes/($no+$yes),2)); ?>%">Yes: <?php echo(100*round($yes/($no+$yes),2)); ?>%</div>
+
+<div style="background:blue; height:30px; width: <?php echo(100*round($no/($no+$yes),2)); ?>%">No: <?php echo(100*round($no/($no+$yes),2)); ?>%</div>
