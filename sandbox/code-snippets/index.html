@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>OWH code snippets</title>
+
+    <link href="http://dataomaha.com/media/scripts/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/shCore.css" rel="stylesheet">
+    <link href="css/shThemeDefault.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+	<style type="text/css">
+		img.logo { width: 75px; padding-top: 15px; }
+        .jumbotron { background: #253494; color:#fff; padding-bottom:1em; }
+        .offset { padding-top: 40px; margin-top: -40px; }
+        .entry { border:1px solid #ccc; padding:15px; margin-bottom:20px;}
+        .topper {background:#253494; margin:-15px -15px 15px -15px; color:#fff; text-transform:uppercase; font-weight:bold; font-size:80%; padding:10px;}
+        .clicker {cursor:pointer; cursor:hand; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: moz-none; -ms-user-select: none; user-select: none; }
+        .syntaxhighlighter { overflow-y: hidden !important; overflow-x: auto !important; padding-bottom:20px;}
+        .toolbar {display:none;}
+        .colors {float:left; margin:0 0 20px 0; padding:0; height:20px; width:20%;}
+        .topper a {color:#eff3ff;}
+
+</style>
+	</style>
+
+	</head>
+
+  <body data-spy="scroll" data-target=".navbar-scroller">
+
+ <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="z-index:999;">
+      <div class="container">
+                <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+        <ul class="nav navbar-nav navbar-scroller">
+            <li><a class="clicker" id="pybutton" title="Python"><span id="pycheck"><i class="fa fa-check"></i></span> Python</a></li>
+            <li><a class="clicker" id="jsbutton" title="Javascript"><span id="jscheck"><i class="fa fa-check"></i></span> Javascript</a></li>            
+            <li><a class="clicker" id="bashbutton" title="Bash"><span id="bashcheck"><i class="fa fa-check"></i></span> Bash</a></li>         <li><a class="clicker" id="colorbutton" title="Color Arrays"><span id="colorcheck"><i class="fa fa-check"></i></span> Color Arrays</a></li> 
+            
+<div class="col-sm-4 col-md-4">
+        <div class="navbar-form input-group">
+          <input type="text" class="form-control" placeholder="Filter ..." name="filter" id="filterer" onkeyup="filterIt()">
+        </div>
+        </div>
+            
+            
+          </ul>
+
+        
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<div class="container" style="margin-top: 70px; margin-bottom:50px;">
+      
+      <div class="entry python">
+        <div class="topper">Python</div>
+        <pre class="brush: python">
+        # list of months in AP style
+        
+        apmonths = [ "Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec." ]
+</pre>
+        </div>
+
+        
+      <div class="entry python">
+        <div class="topper">Python</div>
+        <pre class="brush: python">
+# find duplicates in a list
+
+import collections
+
+list = ["fred", "mary", "frank", "mary", "sally", "heinrich", "sally"]
+print [x for x, y in collections.Counter(list).items() if y > 1]
+
+# ["sally", "mary"]
+</pre>
+        </div>
+        
+
+     <div class="entry javascript">
+        <div class="topper">Javascript</div>
+        <pre class="brush: js">
+// parse datestrings into dates
+
+function parse(str) {
+    var y = str.substr(0,4),
+        m = str.substr(4,2) - 1,
+        d = str.substr(6,2);
+    var D = new Date(y,m,d);
+    return (D.getFullYear() == y && D.getMonth() == m && D.getDate() == d) ? D : '';
+}
+</pre>
+        </div>
+            
+      <div class="entry color">
+        <div class="topper">Color arrays <span style="float:right;"><a href="http://colorbrewer2.org/" target="_blank">ColorBrewer</a> | <a href="http://0to255.com/" target-"_blank">0to255</a></span> </div>        
+
+        <div class="colors" style="background:#eff3ff"></div>
+        <div class="colors" style="background:#bdd7e7"></div>
+        <div class="colors" style="background:#6baed6"></div>
+        <div class="colors" style="background:#3182bd"></div>
+        <div class="colors" style="background:#08519c"></div>
+        <pre class="brush: js">
+        var blues = [ '#eff3ff', '#bdd7e7', '#6baed6', '#3182bd', '#08519c' ]
+        </pre>
+        
+        <div class="colors" style="background:#fee5d9"></div>
+        <div class="colors" style="background:#fcae91"></div>
+        <div class="colors" style="background:#fb6a4a"></div>
+        <div class="colors" style="background:#de2d26"></div>
+        <div class="colors" style="background:#a50f15"></div>
+        <pre class="brush: js">
+        var reds = [ '#fee5d9', '#fcae91', '#fb6a4a', '#de2d26', '#a50f15' ]
+        </pre>
+        
+        <div class="colors" style="background:#edf8e9"></div>
+        <div class="colors" style="background:#bae4b3"></div>
+        <div class="colors" style="background:#74c476"></div>
+        <div class="colors" style="background:#31a354"></div>
+        <div class="colors" style="background:#006d2c"></div>
+        <pre class="brush: js">
+        var greens = [ '#edf8e9', '#bae4b3', '#74c476', '#31a354', '#006d2c' ]
+        </pre>
+        
+        
+        <div class="colors" style="background:#7b3294"></div>
+        <div class="colors" style="background:#c2a5cf"></div>
+        <div class="colors" style="background:#f7f7f7"></div>
+        <div class="colors" style="background:#a6dba0"></div>
+        <div class="colors" style="background:#008837"></div>
+        <pre class="brush: js">
+        var purp_to_green = [ '#7b3294', '#c2a5cf', '#f7f7f7', '#a6dba0', '#008837' ]
+        </pre>
+        
+        
+
+        
+        </div>
+
+
+               <div class="entry javascript">
+        <div class="topper">Javascript</div>
+
+        <pre class="brush: js">
+// convert numbers to AP style
+
+function toAp(num) {
+    if (typeof(num) != "string") 
+    { numstripped = parseInt(num) }
+    else { 
+        numstring = num.replace(/,|$|&euro;|&yen;|&pound;|%|(|)/g,'');
+        numstripped = parseInt(numstring);
+      };
+  
+  if (numstripped < 10) {
+  var apnums = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+  return apnums[numstripped]
+  }
+  
+  else if (numstripped > 999999)
+  {
+    var striplength = numstripped.toString().length;
+  
+   if (striplength >= 7 && striplength <= 9)
+    {return ((numstripped / 1000000).toFixed(2) + ' million').replace('.00','')}
+   if (striplength >= 10 && striplength <= 12)
+    {return ((numstripped / 1000000000).toFixed(2) + ' billion').replace('.00','')} 
+   if (striplength >= 13 && striplength <= 15)
+    {return ((numstripped / 1000000000000).toFixed(2) + ' trillion').replace('.00','')}
+        }
+ 
+  else if (999 > numstripped < 999999) 
+  { numstripped += '';
+  x = numstripped.split('.');
+  x1 = x[0];
+  x2 = x.length > 1 ? '.' + x[1] : '';
+  var rgx = /(\d+)(\d{3})/;
+  while (rgx.test(x1)) {
+    x1 = x1.replace(rgx, '$1' + ',' + '$2');
+       }
+    return x1 + x2;
+  }
+  
+ else 
+    { return numstripped }
+  }
+  
+</pre>
+        
+        </div>
+        
+
+    </div><!-- /.container -->
+
+	</body>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://dataomaha.com/media/scripts/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script src="js/shCore.js"></script>
+    <script src="js/shBrushPython.js"></script> 
+    <script src="js/shBrushBash.js"></script>     
+    <script src="js/shBrushJScript.js"></script>     
+    <script src="js/shBrushCss.js"></script>
+    <script src="js/shBrushSql.js"></script>
+    <script src="js/shBrushXml.js"></script>
+    
+    <script type="text/javascript">
+    
+$.expr[":"].contains = $.expr.createPseudo(function(arg) {
+    return function( elem ) {
+        return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+    };
+});
+
+    $(document).ready(function(){
+        $('.clicker').click(function(){
+            if($(this).attr("id")=="pybutton"){
+                $(".python").toggle('fast');
+                $("#pycheck").toggle();
+            }
+            if($(this).attr("id")=="jsbutton"){
+                $(".javascript").toggle('fast');
+                $("#jscheck").toggle();
+                }
+            if($(this).attr("id")=="bashbutton"){
+                $(".bash").toggle('fast');
+                $("#bashcheck").toggle();
+                }
+            if($(this).attr("id")=="colorbutton"){
+                $(".color").toggle('fast');
+                $("#colorcheck").toggle();
+                }
+                });
+    });
+    
+    SyntaxHighlighter.all()
+    $('pre').attr('spellcheck', 'false');
+    
+    function filterIt() {
+    var look = $('#filterer').val();
+      $('.entry').each(function() {
+       if ($(this).is(':contains(' + look + ')'))
+        {$(this).show('fast')}
+       else {$(this).hide('fast') }
+        });
+    }
+    
+</script>
+    
+    </html>
