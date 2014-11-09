@@ -95,6 +95,29 @@ print [x for x, y in collections.Counter(list).items() if y > 1]
 </pre>
         </div>
         
+    <div class="entry javascript">
+        <div class="topper">Javascript</div>
+        <pre class="brush: js">
+
+// konami code
+        
+$(document).ready(function(){
+    var e=[];
+    var t="38,38,40,40,37,39,37,39,66,65";
+    $(document).keydown(function(n){
+        e.push(n.keyCode);
+            if(e.toString().indexOf(t)>=0){
+                
+                // do stuff here
+                
+                e=[]}
+            })
+       })
+       
+</pre>
+        </div>
+        
+        
              <div class="entry javascript">
         <div class="topper">Javascript</div>
         <pre class="brush: js">
