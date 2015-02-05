@@ -82,5 +82,12 @@ var bb = [
         'descrip': 'So you have a bunch of addresses you want to plot on an interactive map. This session will get you started. Make sure you have a <a href="http://drive.google.com">Google account</a>.',
         'tut': 'https://github.com/OWH-projects/maps-training',
         'dl': 'https://github.com/OWH-projects/maps-training/archive/master.zip'
+    },
+    {
+        'name': 'Backgrounding',
+        'date': new Date("May 6, 2015 12:30:00"),
+        'descrip': 'Learn how to use web tools to background sources, suspects and significant others. (Kidding!) (But really.) You don\'t need to bring anything except for a notebook!.',
+        'tut': 'https://github.com/OWH-projects/backgrounding-training',
+        'dl': 'https://github.com/OWH-projects/backgrounding-training/archive/master.zip'
     }
 ]
