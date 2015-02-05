@@ -86,7 +86,7 @@ var bb = [
     {
         'name': 'Backgrounding',
         'date': new Date("May 6, 2015 12:30:00"),
-        'descrip': 'Learn how to use web tools to background sources, suspects and significant others. (Kidding!) (But really.) You don\'t need to bring anything except for a notebook!.',
+        'descrip': 'Learn how to use web tools to background sources, suspects and significant others. (Kidding!) (But really.) You don\'t need to bring anything except for a notebook.',
         'tut': 'https://github.com/OWH-projects/backgrounding-training',
         'dl': 'https://github.com/OWH-projects/backgrounding-training/archive/master.zip'
     }
