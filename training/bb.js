@@ -16,7 +16,7 @@ var bb = [
     {
         'name': 'Basic Javascript',
         'date': new Date("February 25, 2015 12:30:00"),
-        'descrip': 'If HTML are the nouns of the web and CSS = adjectives, Javascript functions are the verbs. In this session, we\'ll learn some basic syntax for the scripting language that powers the Internet. You\'ll want to have some familiarity with HTML and CSS before attending this training. Also, it would be a good idea to bring a laptop with a good text editor installed (see above).',
+        'descrip': 'If HTML tags are the nouns of the web and CSS rules are adjectives, Javascript functions are the verbs. In this session, we\'ll learn some basic syntax for the scripting language that powers the Internet. You\'ll want to have some familiarity with HTML and CSS before attending this training. Also, it would be a good idea to bring a laptop with a good text editor installed (see above).',
         'tut': 'https://github.com/OWH-projects/javascript-training',
         'dl': 'https://github.com/OWH-projects/javascript-training/archive/master.zip'
     },
