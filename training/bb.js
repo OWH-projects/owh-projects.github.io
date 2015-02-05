@@ -9,7 +9,7 @@ var bb = [
     {
         'name': 'Basic HTML/CSS',
         'date': new Date("February 18, 2015 12:30:00"),
-        'descrip': 'An introduction to making things for the web. If you can, bring a laptop with a good text editor installed. Suggestions: <a href="http://notepad-plus-plus.org" target="_blank">notepad++</a> for Windows, <a href="http://www.sublimetext.com" target="_blank">Sublime</a> or <a href="http://www.barebones.com/products/textwrangler/" target="_blank">TextWrangler</a> for Macs.',
+        'descrip': 'An introduction to making things for the web. If you can, bring a laptop with a good text editor installed. Suggestions: <a href="http://notepad-plus-plus.org" target="_blank">notepad++</a> for Windows, <a href="http://www.sublimetext.com" target="_blank">Sublime</a> or <a href="http://www.barebones.com/products/textwrangler/" target="_blank">TextWrangler</a> for Macs. If you\'re bumping Linux, presumably you\'ve already got a good text editor installed.',
         'tut': 'https://github.com/OWH-projects/html-css-training',
         'dl': 'https://github.com/OWH-projects/html-css-training/archive/master.zip'
     },
