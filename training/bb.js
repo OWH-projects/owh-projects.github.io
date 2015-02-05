@@ -50,7 +50,7 @@ var bb = [
     },
     {
         'name': 'Chartbeat',
-        'date': new Date("March 25, 2015 12:30:00"),
+        'date': new Date("April 1, 2015 12:30:00"),
         'descrip': 'An introduction to web analytics, and why you should care about how readers use Omaha.com.',
         'tut': 'https://github.com/OWH-projects/chartbeat-training',
         'dl': 'https://github.com/OWH-projects/chartbeat-training/archive/master.zip'
