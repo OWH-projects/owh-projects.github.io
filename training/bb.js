@@ -3,8 +3,7 @@ var bb = [
         'name': 'Advanced video training',
         'date': new Date("February 18, 2015 12:30:00"),
         'descrip': 'In this session, you\'ll learn how to shoot iPhone video like a boss. We won\'t be editing. Instead, we\'ll spend time looking at what\'s working and what\'s not on Omaha.com. We\'re also going to look at ways to make your videos better with new editing techniques and shooting tips.',
-        'tut': 'https://github.com/OWH-projects/video-training',
-        'dl': 'https://github.com/OWH-projects/video-training/archive/master.zip'
+        'tut': 'https://github.com/OWH-projects/video-training'
     },
     {
         'name': 'Basic HTML/CSS',

@@ -62,16 +62,22 @@
     
     var apmonths = [ "Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec." ]
 
-    var bags = '',
-        hr = '';
+    var bags = ''
+      , hr = ''
+      , dl = '';
     
     for (i=0;i<bb.length;i++) {
         if ( i === (bb.length - 1) )
             { hr = "" }
         else
             { hr = "<hr>" }
+            
+        if ( bb[i].dl )
+            { dl = "<li><a href='" + bb[i].dl + "'><i class='fa-li fa fa-arrow-circle-down'></i>Download files for this session</a></li>" }
+        else
+            { dl = '' }
         bags += [
-        '<h3 class="bold">' + apmonths[bb[i].date.getUTCMonth()] + " " + bb[i].date.getDate() + ": " + bb[i].name + "</h3><p>" + bb[i].descrip + "</p><ul class='fa-ul'><li><a href='" + bb[i].tut + "'><i class='fa-li fa fa-bookmark-o'></i>Follow along with the tutorial</a></li><li><a href='" + bb[i].dl + "'><i class='fa-li fa fa-arrow-circle-down'></i>Download files for this session</a></li></ul>" + hr 
+        '<h3 class="bold">' + apmonths[bb[i].date.getUTCMonth()] + " " + bb[i].date.getDate() + ": " + bb[i].name + "</h3><p>" + bb[i].descrip + "</p><ul class='fa-ul'><li><a href='" + bb[i].tut + "'><i class='fa-li fa fa-bookmark-o'></i>Follow along with the tutorial</a></li>" + dl + "</ul>" + hr 
         ].join('');
     }
     $('#brown_bag').html(bags);
