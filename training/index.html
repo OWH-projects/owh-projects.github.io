@@ -24,6 +24,7 @@
     .jumbotron { background:#fee391; text-align:center; }
     .bold { font-weight:bold; }
     .ital { font-style:italic; }
+    .done, .done > ul > li > a { color:#ccc; }
 	</style>
 
 	</head>
@@ -64,7 +65,8 @@
 
     var bags = ''
       , hr = ''
-      , dl = '';
+      , dl = ''
+      , done = '';
     
     for (i=0;i<bb.length;i++) {
         if ( i === (bb.length - 1) )
@@ -76,8 +78,14 @@
             { dl = "<li><a href='" + bb[i].dl + "'><i class='fa-li fa fa-arrow-circle-down'></i>Download files for this session</a></li>" }
         else
             { dl = '' }
+        
+        if ( bb[i].date < new Date() )
+            { done = ' done' }
+        else
+            { done = '' }
+            
         bags += [
-        '<h3 class="bold">' + apmonths[bb[i].date.getUTCMonth()] + " " + bb[i].date.getDate() + ": " + bb[i].name + "</h3><p>" + bb[i].descrip + "</p><ul class='fa-ul'><li><a href='" + bb[i].tut + "'><i class='fa-li fa fa-bookmark-o'></i>Follow along with the tutorial</a></li>" + dl + "</ul>" + hr 
+        '<div class="entry' + done + '"><h3 class="bold">' + apmonths[bb[i].date.getUTCMonth()] + " " + bb[i].date.getDate() + ": " + bb[i].name + "</h3><p>" + bb[i].descrip + "</p><ul class='fa-ul'><li><a href='" + bb[i].tut + "'><i class='fa-li fa fa-bookmark-o'></i>Follow along with the tutorial</a></li>" + dl + "</ul>" + hr + '</div>'
         ].join('');
     }
     $('#brown_bag').html(bags);
