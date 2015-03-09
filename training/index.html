@@ -49,6 +49,30 @@
     
     <hr>
     
+    <script type="text/html" class="template">            
+            <% _.each( bb, function( course, i ){ %>
+            <div class="entry<% if ( new Date(course.date) < new Date() ) { %> done<% } %>">
+                <h3 class="bold">
+                    </%=><%= apDate(course.date) %>: <%= course.name %>
+                </h3>
+                <p>
+                <%= course.descrip %>
+                </p>
+                <ul class='fa-ul'>
+                    <li>
+                        <a href="<%= course.tut %>"><i class='fa-li fa fa-bookmark-o'></i>Follow along with the tutorial</a>
+                    </li>
+                    <% if ( course.date) { %> 
+                    <li>
+                        <a href="<%= course.dl %>"><i class='fa-li fa fa-arrow-circle-down'></i>Download files for this session</a>
+                    </li>
+                    <% } %>
+                </ul>
+                <%= isLast(i) %>
+            </div>
+            <% }); %>            
+            </script>
+    
     <div id="brown_bag"></div>
     
     </div><!-- /.container -->
@@ -57,38 +81,8 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://dataomaha.com/media/scripts/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script src="bb.js"></script>
-
-    <script>
-    
-    var apmonths = [ "Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec." ]
-
-    var bags = ''
-      , hr = ''
-      , dl = ''
-      , done = '';
-    
-    for (i=0;i<bb.length;i++) {
-        if ( i === (bb.length - 1) )
-            { hr = "" }
-        else
-            { hr = "<hr>" }
-            
-        if ( bb[i].dl )
-            { dl = "<li><a href='" + bb[i].dl + "'><i class='fa-li fa fa-arrow-circle-down'></i>Download files for this session</a></li>" }
-        else
-            { dl = '' }
-        
-        if ( bb[i].date < new Date() )
-            { done = ' done' }
-        else
-            { done = '' }
-            
-        bags += [
-        '<div class="entry' + done + '"><h3 class="bold">' + apmonths[bb[i].date.getUTCMonth()] + " " + bb[i].date.getDate() + ": " + bb[i].name + "</h3><p>" + bb[i].descrip + "</p><ul class='fa-ul'><li><a href='" + bb[i].tut + "'><i class='fa-li fa fa-bookmark-o'></i>Follow along with the tutorial</a></li>" + dl + "</ul>" + hr + '</div>'
-        ].join('');
-    }
-    $('#brown_bag').html(bags);
-    </script>
+    <script src="http://dataomaha.com/media/scripts/underscore-min.js"></script>
+    <script src="js/bb.js"></script>
+    <script src="js/main.js"></script>
   
   </html>
