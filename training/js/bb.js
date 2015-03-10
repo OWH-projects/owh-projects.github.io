@@ -22,7 +22,7 @@ var bb = [
     {
         name: 'Using Twitter like a pro',
         date: "March 11, 2015 13:00:00",
-        descrip: 'Twitter is where the action is. Learn to use it to find story leads and connect with readers. We\'ll have a cheat sheet and it would be a good idea to bring a laptop. Make sure you have a <a href="http://www.twitter.com" target="_blank">Twitter account</a> set up and <a href="http://www.google.com/chrome" target="_blank">Google Chrome</a> installed (especially if you want to follow along on your own computer).',
+        descrip: 'Twitter is where the action is. Learn to use it to find story leads and connect with readers. Make sure you have a <a href="http://www.twitter.com" target="_blank">Twitter account</a> set up and <a href="http://www.google.com/chrome" target="_blank">Google Chrome</a> installed (especially if you want to follow along on your own computer).',
         tut: 'https://github.com/OWH-projects/twitter-training',
         dl: 'https://github.com/OWH-projects/twitter-training/archive/master.zip'
     },
