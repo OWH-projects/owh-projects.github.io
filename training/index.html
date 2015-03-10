@@ -58,16 +58,25 @@
                 <p>
                 <%= course.descrip %>
                 </p>
+                
+                <% if ( course.dl || course.tut ) { %> 
+                
                 <ul class='fa-ul'>
+                    <% if ( course.tut ) { %>
                     <li>
                         <a href="<%= course.tut %>"><i class='fa-li fa fa-bookmark-o'></i>Follow along with the tutorial</a>
                     </li>
+                    <% } %>
+                    
                     <% if ( course.dl ) { %> 
                     <li>
                         <a href="<%= course.dl %>"><i class='fa-li fa fa-arrow-circle-down'></i>Download files for this session</a>
                     </li>
                     <% } %>
                 </ul>
+                
+                <% } %>
+                
                 <%= isLast(i) %>
             </div>
             <% }); %>            
