@@ -25,7 +25,7 @@ var bb = [
         descrip: 'Twitter is where the action is. Learn to use it to find story leads and connect with readers. Make sure you have a <a href="http://www.twitter.com" target="_blank">Twitter account</a> set up and <a href="http://www.google.com/chrome" target="_blank">Google Chrome</a> installed (especially if you want to follow along on your own computer).'
     },
     {
-        name: 'Excel and Google Spreadsheets',
+        name: 'Spreadsheets',
         date: "March 18, 2015 13:00:00",
         descrip: 'Search, sort and sift data to add quantitative heft to your reporting. A laptop would be useful, and you\'ll need a <a href="http://drive.google.com">Google account</a> to follow along.',
         tut: 'https://github.com/OWH-projects/excel-training'
