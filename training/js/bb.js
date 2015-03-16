@@ -27,9 +27,8 @@ var bb = [
     {
         name: 'Excel and Google Spreadsheets',
         date: "March 18, 2015 13:00:00",
-        descrip: 'Search, sort and sift data to add quantitative heft to your reporting. If you don\'t have a copy of Excel, you\'ll need a <a href="http://drive.google.com">Google account</a>.',
-        tut: 'https://github.com/OWH-projects/excel-training',
-        dl: 'https://github.com/OWH-projects/excel-training/archive/master.zip'
+        descrip: 'Search, sort and sift data to add quantitative heft to your reporting. A laptop would be useful, and you\'ll need a <a href="http://drive.google.com">Google account</a> to follow along.',
+        tut: 'https://github.com/OWH-projects/excel-training'
     },
     {
         name: 'Introduction to SQL',
