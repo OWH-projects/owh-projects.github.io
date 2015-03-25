@@ -34,8 +34,6 @@ var bb = [
         name: 'Introduction to SQL',
         date: "March 25, 2015 13:00:00",
         descrip: 'If you have more data than Excel can handle, Structured Query Language is your friend. In this session we\'ll be using a browser add-on for <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a> called <a href="https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/" target="_blank">SQLite Manager</a>.',
-        tut: 'https://github.com/OWH-projects/sql-training',
-        dl: 'https://github.com/OWH-projects/sql-training/archive/master.zip'
     },
     {
         name: 'Social media research',
