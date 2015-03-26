@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+   
+    <title>Table: Sarpy sewer rates</title>
+
+    <link href="http://dataomaha.com/media/scripts/bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet">
+    
+    <style>
+    h3 { font-weight:bold; }
+    </style>
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+	</head>
+
+  <body>
+    <script type="text/template" class="template">
+     <% _.each( sewers, function( thing ){ %>
+     <h3 style="margin-top:50px;"><%= thing.name %> (<%= thing.frequency %>)</h3>
+     <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th>2015</th>
+            <th>2016</th>
+            <th>2017</th>
+            <th>2018</th>
+        </tr>
+        </thead>        
+        <tbody>
+       <% _.each( thing.table, function( el ){ %>
+       <tr>
+                <td><%= el.z %></td>
+                <td><%= el.e2015 %></td>
+                <td><%= el.e2016 %></td>
+                <td><%= el.e2017 %></td>
+                <td><%= el.e2018 %></td>
+            </tr>
+       <% }); %>
+       </tbody>
+     </table>
+        <% }); %>
+    </script>
+    <div id="sewertable" style="width:100%"></div>
+  </body>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+    <script src="http://dataomaha.com/media/scripts/underscore-min.js"></script>
+    <script src="js/sewers.js"></script>
+    
+    <script>
+    var template = _.template($( "script.template" ).html());   
+    $('#sewertable').html(template( sewers ));
+    
+    </script>
+    
+  </html>
