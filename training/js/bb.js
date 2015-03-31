@@ -38,9 +38,7 @@ var bb = [
     {
         "name": 'Social media research',
         "date": "April 1, 2015 13:00:00",
-        "descrip": 'Tips and tricks for mining social media sites for information about people.',
-        "tut": 'https://github.com/OWH-projects/social-media-training',
-        "dl": 'https://github.com/OWH-projects/social-media-training/archive/master.zip'
+        "descrip": 'Tips and tricks for mining social media sites for information about people.'
     },
     {
         "name": 'Chartbeat',
