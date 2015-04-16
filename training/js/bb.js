@@ -88,5 +88,12 @@ var bb = [
         "descrip": 'Learn how to use web tools to background sources, suspects and significant others. (Kidding!) (But really.) You don\'t need to bring anything except for a notebook.',
         "tut": 'https://github.com/OWH-projects/backgrounding-training',
         "dl": 'https://github.com/OWH-projects/backgrounding-training/archive/master.zip'
+    },
+    {
+        "name": 'DocumentCloud',
+        "date": "May 27 2015 13:00:00",
+        "descrip": 'If you have documents that would help readers understand your story, DocumentCloud is your amigo. In this session, we\'ll walk you through how to upload and annotate newsworthy documents.',
+        "tut": 'https://github.com/OWH-projects/documentcloud-training',
+        "dl": 'https://github.com/OWH-projects/documentcloud-training/archive/master.zip'
     }
 ]
