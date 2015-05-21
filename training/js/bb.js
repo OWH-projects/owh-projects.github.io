@@ -112,5 +112,11 @@ var bb = [
         "date": "June 17 2015 13:00:00",
         "descrip": 'Reporter Andrea Kszystyniak talks about inclusive language.',
         "tut": 'https://github.com/OWH-projects/inclusiveness-training'
+    },
+    {
+        "name": 'Dealing with PDFs',
+        "date": "June 24 2015 13:00:00",
+        "descrip": 'You asked for data. They gave you a PDF. In this session, we\'ll talk about some tools that can help you extract what you need.',
+        "tut": 'https://github.com/OWH-projects/pdf-training'
     }
 ]
