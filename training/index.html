@@ -26,7 +26,7 @@
     .bold { font-weight:bold; }
     .ital { font-style:italic; }
     .done, .done > p > a, .done > ul > li > a { color:#ccc; }
-    .fa-user-plus { color:#aaa; }
+    .gray { color:#aaa; }
 	</style>
 
 	</head>
@@ -47,13 +47,16 @@
     <img src="http://media.giphy.com/media/PvvSfSDFoAL5e/giphy.gif" style="max-width:100%; margin-bottom:40px;" />
     </div>
     
+    <h3><i class="fa fa-user-plus"></i> = Slightly more advanced</h3>
+    
     <hr>
     
+    <div id="brown_bag"></div>
     <script type="text/html" class="template">            
             <% _.each( bb, function( course, i ){ %>
             <div class="entry<% if ( new Date(course.date) < new Date() ) { %> done<% } %>">
                 <h3 class="bold">
-                    </%=><%= apDate(course.date) %>: <%= course.name %> <% if ( course.hard ) { %>&ensp;<i class="fa fa-user-plus"></i><% } %>
+                    </%=><%= apDate(course.date) %>: <%= course.name %> <% if ( course.hard ) { %>&ensp;<i class="fa fa-user-plus gray"></i><% } %>
                 </h3>
                 <p>
                 <%= course.descrip %>
@@ -81,8 +84,6 @@
             </div>
             <% }); %>            
             </script>
-    
-    <div id="brown_bag"></div>
     
     </div><!-- /.container -->
 

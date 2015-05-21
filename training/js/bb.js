@@ -98,7 +98,7 @@ var bb = [
     {
         "name": 'Video, redux',
         "date": "June 3 2015 13:00:00",
-        "descrip": 'New video editor Zach Long talks about shooting great video.',
+        "descrip": 'Video assignment editor Zach Long talks about some simple methods to develop videos within the world of newspapers. The ability to make something from nothing often yields the greatest results.',
         "tut": 'https://github.com/OWH-projects/video-redux'
     },
     {
