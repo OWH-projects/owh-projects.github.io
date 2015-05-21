@@ -93,7 +93,18 @@ var bb = [
         "name": 'DocumentCloud',
         "date": "May 27 2015 13:00:00",
         "descrip": 'If you have documents that would help readers understand your story, DocumentCloud is your amigo. In this session, we\'ll walk you through how to upload and annotate newsworthy documents.',
-        "tut": 'https://github.com/OWH-projects/documentcloud-training',
-        "dl": 'https://github.com/OWH-projects/documentcloud-training/archive/master.zip'
+        "tut": 'https://github.com/OWH-projects/documentcloud-training'
+    },
+    {
+        "name": 'Video, redux',
+        "date": "June 3 2015 13:00:00",
+        "descrip": 'New video editor Zach Long talks about shooting great video.',
+        "tut": 'https://github.com/OWH-projects/video-redux'
+    },
+    {
+        "name": 'Weather',
+        "date": "June 10 2015 13:00:00",
+        "descrip": 'Sooner or later, we all get tapped to write about weather. In this session, reporter Nancy Gaarder will walk us through some online tools that make doing so easier: Storm and tornado damage reports, real-time severe weather maps, regional lists of rain totals and more. Learn the differences between the National Weather Service and its sister agencies so you know where to turn for information.',
+        "tut": 'https://github.com/OWH-projects/weather-training'
     }
 ]
