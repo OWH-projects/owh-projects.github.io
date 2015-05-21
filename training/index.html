@@ -12,7 +12,7 @@
     <link href="http://dataomaha.com/media/scripts/bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet">
 
     <!-- Font Awesome icons, v4.2 -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,6 +26,7 @@
     .bold { font-weight:bold; }
     .ital { font-style:italic; }
     .done, .done > p > a, .done > ul > li > a { color:#ccc; }
+    .fa-user-plus { color:#aaa; }
 	</style>
 
 	</head>
@@ -52,7 +53,7 @@
             <% _.each( bb, function( course, i ){ %>
             <div class="entry<% if ( new Date(course.date) < new Date() ) { %> done<% } %>">
                 <h3 class="bold">
-                    </%=><%= apDate(course.date) %>: <%= course.name %>
+                    </%=><%= apDate(course.date) %>: <%= course.name %> <% if ( course.hard ) { %>&ensp;<i class="fa fa-user-plus"></i><% } %>
                 </h3>
                 <p>
                 <%= course.descrip %>
