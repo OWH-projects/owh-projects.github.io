@@ -97,20 +97,19 @@ var bb = [
     {
         "name": 'Video, redux',
         "date": "June 3 2015 13:00:00",
-        "descrip": 'Video assignment editor Zach Long talks about some simple methods to develop videos within the world of newspapers. The ability to make something from nothing often yields the greatest results.',
-        "tut": 'https://github.com/OWH-projects/video-redux'
-    },
-    {
-        "name": 'Weather',
-        "date": "June 10 2015 13:00:00",
-        "descrip": 'Sooner or later, we all get tapped to write about weather. In this session, reporter Nancy Gaarder will walk us through some online tools that make doing so easier: Storm and tornado damage reports, real-time severe weather maps, regional lists of rain totals and more. Learn the differences between the National Weather Service and its sister agencies so you know where to turn for information.',
-        "tut": 'https://github.com/OWH-projects/weather-training'
+        "descrip": 'Video assignment editor Zach Long talks about some simple methods to develop videos within the world of newspapers. The ability to make something from nothing often yields the greatest results.'
     },
     {
         "name": 'Inclusiveness',
-        "date": "June 17 2015 13:00:00",
+        "date": "June 10 2015 13:00:00",
         "descrip": 'Reporter Andrea Kszystyniak talks about inclusive language.',
         "tut": 'https://github.com/OWH-projects/inclusiveness-training'
+    },
+    {
+        "name": 'Weather',
+        "date": "June 17 2015 13:00:00",
+        "descrip": 'Sooner or later, we all get tapped to write about weather. In this session, reporter Nancy Gaarder will walk us through some online tools that make doing so easier: Storm and tornado damage reports, real-time severe weather maps, regional lists of rain totals and more. Learn the differences between the National Weather Service and its sister agencies so you know where to turn for information.',
+        "tut": 'https://github.com/OWH-projects/weather-training'
     },
     {
         "name": 'Dealing with PDFs',
