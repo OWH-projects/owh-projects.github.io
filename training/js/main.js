@@ -7,7 +7,7 @@ function apDate(dateobj) {
 
 $('document').ready(function() {
     $.getJSON('js/bb.json').success(function(data) {
-        function isLast(iter) { var len = bb.length -1; if ( iter !== len ) return '<hr>' };
+        function isLast(iter) { var len = data.bb.length -1; if ( iter !== len ) return '<hr>' };
         _.templateSettings.variable = "grapefruit";
         var template = _.template($( "script.template" ).html());            
         $('#brown_bag').html(template( data.bb ));
