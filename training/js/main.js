@@ -1,10 +1,4 @@
 var apmonths = [ "Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec." ];
-    
-function isLast(iter) {
-    var len = bb.length -1;
-    if ( iter !== len ) 
-        return '<hr>'
-};
 
 function apDate(dateobj) {
     var d = new Date(dateobj), thisdate = apmonths[d.getMonth()] + " " + d.getUTCDate();
@@ -13,6 +7,7 @@ function apDate(dateobj) {
 
 $('document').ready(function() {
     $.getJSON('js/bb.json').success(function(data) {
+        function isLast(iter) { var len = bb.length -1; if ( iter !== len ) return '<hr>' };
         _.templateSettings.variable = "grapefruit";
         var template = _.template($( "script.template" ).html());            
         $('#brown_bag').html(template( data.bb ));
