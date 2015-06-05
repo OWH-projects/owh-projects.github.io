@@ -1,12 +1,12 @@
 var apmonths = [ "Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec." ];
 
-function apDate(dateobj) {
+var apDate = function(dateobj) {
     var d = new Date(dateobj), thisdate = apmonths[d.getMonth()] + " " + d.getUTCDate();
     return thisdate;
 };
 
-function isLast(iter, arr) {
-    var len = arr.length -1;
+var isLast = function(iter, arr) {
+    var len = arr.length - 1;
     if ( iter !== len )
         return '<hr>' 
 };
