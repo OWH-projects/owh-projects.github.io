@@ -13,6 +13,7 @@ function apDate(dateobj) {
 
 $('document').ready(function() {
     $.getJSON('js/bb.json').success(function(data) {
+        _.templateSettings.variable = "grapefruit";
         var template = _.template($( "script.template" ).html());            
         $('#brown_bag').html(template( data.bb ));
     }).then(function() {
