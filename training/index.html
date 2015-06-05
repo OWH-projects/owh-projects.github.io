@@ -48,10 +48,10 @@
     </div>
     
     <h3><i class="fa fa-user-plus"></i> = Slightly more advanced</h3>
-    
     <hr>
+    <h1 id="loading" style="text-align:center; margin-top:60px;"><i class="fa fa-spinner fa-pulse"></i></h1>
     
-    <div id="brown_bag"></div>
+    <div id="brown_bag" style="display:none;"></div>
     <script type="text/html" class="template">            
             <% _.each( bb, function( course, i ){ %>
             <div class="entry<% if ( new Date(course.date) < new Date() ) { %> done<% } %>">
