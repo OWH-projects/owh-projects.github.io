@@ -23,3 +23,9 @@ $('document').ready(function() {
         alert("Sorry, something broke. Try reloading the page.");
     });    
 });
+
+/*
+***
+{"name":"Hardcore CSS","date":"July 8 2015 13:00:00","descrip":"Ben Vankat schools us on advanced CSS, probably like <blink>&lt;blink&gt;</blink>.","tut":"https://github.com/OWH-projects/hard-css-training","hard":true}
+***
+*/
