@@ -1,0 +1,45 @@
+<html>
+
+<style>
+* { margin:0; padding:0; }
+#chart {height:100px; width:100%; max-width:300px; overflow:hidden;}
+.bar {background:#ddd; color:#fff; box-sizing:border-box; display:inline-block; border-right:1px solid #fff; text-align:center; font-size:x-small; font-family: Verdana, Arial, sans-serif; vertical-align: bottom; font-weight:bold; min-width:20px; max-width:30px;}
+.hover { background:#999; }
+#out { margin-top:15px; }
+
+</style>
+
+<div id="chart"></div>
+<div id="out"></div>
+
+<script src="git/main/js/jquery.min.js"></script>
+<script src="git/main/js/underscore-min.js"></script>
+
+<script>
+
+var bleh = [ {"name":"2002", "num":12}, {"name":"2003", "num":23}, {"name":"2004","num":15}, {"name":"2005","num":20}, {"name":"2006","num":14}, {"name":"2007","num":30}, {"name":"2008","num":28}, {"name":"2009","num":17},{"name":"2010","num":19}, {"name":"2011","num":20}, {"name":"2012","num":21}, {"name":"2013","num":10}, {"name":"2014","num":25}];
+
+var sorted = _.sortBy(bleh, function(d) { return d['name'] }),
+    most = _.max(sorted, function(d) { return d['num'] })['num'],
+    width = 100 / sorted.length,
+    str = '';
+
+_.each(sorted, function(d) {
+    var height = (d['num'] / most) * 100;
+    str += '<div class="bar" id="' + d['name'] + '" style="width:' + width + '%; height: ' + height + '%;">' + d['num'] + '</div>';
+});
+
+document.getElementById('chart').innerHTML = str;
+
+$('.bar').hover(function() {
+    $(this).addClass('hover');
+    var obj = _.findWhere(sorted, {"name":this.id});
+    $('#out').html(this.id + ": " + obj['num']);
+}, function() {
+    $(this).removeClass('hover');
+    $('#out').html('');
+});
+
+</script>
+
+</html>
