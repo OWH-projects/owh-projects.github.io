@@ -39,6 +39,7 @@
     .jumbotron { padding-top:70px; background: #de2d26; color:#fff;}
     .bold { font-weight:bold; }
     .ital { font-style:italic; }
+    .item { padding-top:70px; }
 	</style>
 
 	</head>
@@ -53,6 +54,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class="navbar-brand" href="#">Real World: Data Reporting</a>
         </div>
         <div class="collapse navbar-collapse">
 
@@ -60,49 +62,70 @@
             <li><a href="#get-data" title="get-data" style="margin-top: 2px;">Get the data</a></li>
             <li><a href="#find-the-story" title="find-the-story" style="margin-top: 2px;">Find the story</a></li>
             <li><a href="#building" title="building" style="margin-top: 2px;">Make Internet</a></li>
-          </ul>
+            <li><a href="#learn" title="learn" style="margin-top: 2px;">Getting started</a></li>
+        </ul>
 
 		<a class="navbar-right" href="http://omaha.com" target="_blank"><img class="logo" src="http://dataomaha.com/media/logo-owh-white.png" style="width: 150px; padding: 15px 0;"></a>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
-	<div class="jumbotron">
-    <div class="container">
-        <h1 class="bold">Real World</h1>
-        <p class="lead ital">Data reporting</p>
-	</div>
-	</div>
-
-	<div class="container" style="margin-bottom: 50px;">
-		<div id="get-data">	
-			<h2>Get the data</h2>
-			<p>Summary text here</p>
-			<table class="table table-responsive table-striped">
-				<thead>
-					<tr><th>Column</th><th>Column</th><th>Column</th></tr>
-				</thead>
-				<tbody>
-					<tr><td>Column</td><td>Column</td><td>Column</td></tr>
-					<tr><td>Column</td><td>Column</td><td>Column</td></tr>
-					<tr><td>Column</td><td>Column</td><td>Column</td></tr>
-					<tr><td>Column</td><td>Column</td><td>Column</td></tr>
-					<tr><td>Column</td><td>Column</td><td>Column</td></tr>				
-				</tbody>
-			</table>
+	<div class="container" style="margin-bottom: 2350px;">
+		
+        <div class="item" id="get-data">	
+			<h1 class="bold">Get the data</h1>
+            <img src="https://media.giphy.com/media/zEU2uwmialC4U/giphy.gif" style="max-width:100%; margin-bottom:30px;" />
+			<ul class="lead">
+                <li>Become friends with <a href="http://uniweb.legislature.ne.gov/laws/statutes.php?statute=84-712" target="_blank">Nebraska's public records law</a></li>
+                <li><a href="http://dataomaha.com/media/news/records/" target="_blank">Use our request template</a></li>
+                <li><a href="http://blog.dataomaha.com/pdfs-data-nebraskas-public-records-law-and-why-you-should-care-about-file-formatting/" target="_blank">Don't settle for a PDF</a></li>
+                <li>Most often, you won't find a story in a database &mdash; you'll find a <em>better</em> story</li>
+                <li>Pick up the phone!</li>
+                <li>Treat data as you would a human source
+                    <ul>
+                        <li>Be skeptical</li>
+                        <li>Ask intelligent questions</li>
+                        <li>Don't trust, always verify</li>
+                    </ul>
+                </li>
+            </ul>
 		</div>
 
-
-		<div id="find-the-story">
-			<h2>Find the story</h2>
-			<p>More summary text</p>
+		<div class="item" id="find-the-story">
+			<h1 class="bold">Find the story</h1>
+            <a href="http://dataomaha.com/prison/individual/71968" target="_blank"><img src="doc.png" style="width:400px; border:1px solid #ccc; max-width:100%; margin-bottom:30px;" /></a>
+            <p class="lead">Case study: Nebraska prison sentence miscalculations. Data analysis to verify and build on a reporter's courtroom observation.</p>            
+            <ul class="lead">
+                <li>Scrape DOC website to harvest sentencing data</li>
+                <li>Mine court records to create own data set</li>
+                <li>Interview many people</li>
+                <li>Structure data into <a href="http://dataomaha.com/prison" target="_blank">a web app</a></li>
+            </ul>            
 		</div>
 
-		<div id="building">
+		<div class="item" id="building">
 			<h2>Make Internet</h2>
-			<p>More summary text</p>
+            <img src="html.png" style="max-width:100%; margin-bottom:30px;" />
+            <ul class="lead">
+                <li>HTML, CSS, Javascript</li>
+                <li>Mapping: Fusion Tables, Leaflet</li>
+                <li>Web + databases: Django</li>
+            </ul>
 		</div>
 
+		<div class="item" id="learn">
+			<h2>Getting started</h2>
+            <ul class="lead">
+                <li><a href="http://www.ire.org/nicar/" target="_blank">Join IRE/NICAR</a></li>
+                <li>Excel or Google Spreadsheets (PDF: <a href="http://extra.twincities.com/car/mj/ExcelClassHandout.pdf">My Favorite Excel Things</a>)</li>
+                <li>Access, MySQL, SQLite (<a href="https://github.com/tthibo/SQL-Tutorial" target="_blank">A gentle introduction to SQL</a>)</li>
+                <li>Scripting: Python (<a href="https://github.com/PythonJournos/LearningPython/wiki" target="_blank">PythonJournos</a>, <a href="https://www.codecademy.com/tracks/python" target="_blank">Codecademy</a>)</li>
+            </ul>
+		</div>
+        
+    
+    <p class="small ital item">Find more OWH goodness at <a href="http://dataomaha.com" target="_blank">dataomaha.com</a>.</p>
+        
 
     </div><!-- /.container -->
 
